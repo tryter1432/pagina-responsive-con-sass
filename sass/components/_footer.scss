@@ -1,0 +1,83 @@
+.contacto {
+    background-color: $color-primario;
+    margin-top: 20px;
+    .contacto-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 150px;
+        @include ancho;
+        .formulario {
+            p {
+                color: $color-claro;
+                font-family: $fuente2;
+                font-size: 25px;
+            }
+            input {
+                border: 1px solid $color-claro;
+                border-radius: 10px;
+                width: 40%;
+                height: 40px;
+                padding-left: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            input:hover {
+                border: 1px solid $color-oscuro;
+            }
+            .button {
+                button {
+                    width: 25%;
+                    height: 25px;
+                    border:1px solid $color-claro;
+                    border-radius: 10px;
+                    background-color: $color-primario;
+                    color: $color-claro;
+                }
+                button:hover {
+                    background-color: $color-claro;
+                    color: $color-primario;
+                    border: 1px solid $color-primario;
+                }
+            }
+        }
+        .redes {
+            ul {
+                display: flex;
+                justify-content: center;
+                
+                li {
+                    list-style: none;
+                    margin-left: 10px;
+                    img {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+footer {
+    background-color: $color-oscuro;
+    .footer{
+        color: $color-claro;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+        font-family: $fuente2;
+        @include ancho;
+        .platzi {
+            display: flex;
+            img {
+                width: 100px;
+                position: relative;
+                bottom: 10px;
+                left: 1%;
+            }
+        }
+    }
+}

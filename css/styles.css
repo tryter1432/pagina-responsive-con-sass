@@ -156,3 +156,83 @@ main .main-container .platzi__video--text p {
   background-color: #026fff;
   color: #FFF;
 }
+
+.contacto {
+  background-color: #026fff;
+  margin-top: 20px;
+}
+.contacto .contacto-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contacto .contacto-container .formulario p {
+  color: #FFF;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+}
+.contacto .contacto-container .formulario input {
+  border: 1px solid #FFF;
+  border-radius: 10px;
+  width: 40%;
+  height: 40px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contacto .contacto-container .formulario input:hover {
+  border: 1px solid #1D252C;
+}
+.contacto .contacto-container .formulario .button button {
+  width: 25%;
+  height: 25px;
+  border: 1px solid #FFF;
+  border-radius: 10px;
+  background-color: #026fff;
+  color: #FFF;
+}
+.contacto .contacto-container .formulario .button button:hover {
+  background-color: #FFF;
+  color: #026fff;
+  border: 1px solid #026fff;
+}
+.contacto .contacto-container .redes ul {
+  display: flex;
+  justify-content: center;
+}
+.contacto .contacto-container .redes ul li {
+  list-style: none;
+  margin-left: 10px;
+}
+.contacto .contacto-container .redes ul li img {
+  width: 50px;
+}
+
+footer {
+  background-color: #1D252C;
+}
+footer .footer {
+  color: #FFF;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Oswald", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer .footer .platzi {
+  display: flex;
+}
+footer .footer .platzi img {
+  width: 100px;
+  position: relative;
+  bottom: 10px;
+  left: 1%;
+}
