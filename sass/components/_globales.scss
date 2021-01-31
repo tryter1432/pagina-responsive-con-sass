@@ -1,7 +1,47 @@
 $color-oscuro: #1D252C;
-
+$color-claro: #FFF;
+$color-primario: #026fff;
+$fuente1: 'Lato', sans-serif;
+$fuente2: 'Oswald', sans-serif;
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+
+@mixin a { 
+    text-decoration: none;
+    color: $color-claro;
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+@mixin titulos($fuente) {
+    @if ($fuente==$fuente1) {
+        font-family: $fuente1;
+    } @else {
+        font-family: $fuente2;
+        text-transform: uppercase;
+    }
+}
+
+@mixin  ancho {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin title {
+    color: $color-primario;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top: 5%;
+    @include titulos($fuente1);
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: space-evenly;
 }

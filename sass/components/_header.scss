@@ -1,5 +1,31 @@
 header {
     background-color: $color-oscuro;
-    max-width: 1200px;
-    margin: 0 auto ;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include ancho;
+        img {
+            width: 200px;
+            padding-top: 10px;
+        }
+        border-bottom: 1px solid $color-claro;
+        .nav__menu {
+            .nav__list {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                font-family: $fuente2;
+                font-size: 25px;
+                
+                li {
+                    margin-right: 10px
+                }
+                a {
+                    @include a;
+                }
+            
+            }
+        }
+    }
 }

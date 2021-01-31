@@ -1,0 +1,52 @@
+.platzi__conf{
+    @include ancho;
+    background-color: $color-claro;
+    &--container {
+       @include grid;
+    }
+    &--container--second {
+        @include grid;
+    }
+    &--title {
+        @include title;
+    }
+    &--box {
+        border-radius: 20px;
+        margin-top: 60px;
+        text-align: center;
+        font-family: $fuente2;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        h3 {
+            background-color: $color-claro;
+            border-radius: 15px;
+            font-size: 30px;
+            position: relative;
+            bottom: 30px;
+            left: 23%;
+            width: 60%;
+            text-transform: uppercase;
+        }
+        p {
+            width: 98%;
+            
+        }
+        button {
+            border: 1px solid $color-primario;
+            border-radius: 10px;
+            color: $color-primario;
+            width: 25%;
+            height: 30px;
+            margin: 10px 0;
+        }
+        button:hover {
+            background-color: $color-primario;
+            color: $color-claro;
+                
+        }
+        
+    }
+}

@@ -1,0 +1,26 @@
+.titulo__principal {
+    background-color: $color-oscuro;
+    color: $color-claro;
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    font-size: 30px;
+    justify-content: center;
+    height: 280px;
+    @include titulos($fuente1);
+    strong {
+        color: $color-primario;
+    }
+    h1 {
+        margin-top: 6%;
+    }
+    &--image {
+        img {
+            border-radius: 12px;
+            margin-left: 55px;
+            width: 450px;
+            height: 300px;
+            margin-top: 6%;
+            
+        }
+    }
+}
